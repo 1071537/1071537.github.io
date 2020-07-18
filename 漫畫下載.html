@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset = "utf-8">
-      <title>test</title>  
+      <title>comic</title>  
 
      <script>
 	  var p1;
@@ -12,7 +12,8 @@
 	  s = window.prompt( "Enter scrip");	
 	  p1 = window.prompt( "Enter first page");
 	  p2 = window.prompt( "Enter last page");
-
+	 if(s<10)
+	 {
 	 for(var n = p1; n <10 ;n++)
 	    {
 		 document.writeln( "<h2>"+n+"</h2>" );
@@ -24,6 +25,21 @@
 		document.writeln( "<h2>"+n+"</h2>" );
 		document.writeln('<img src="https://www.cartoonmad.com/75577/6099/00'+s+'/0'+n+'.jpg">');
 	    }
+	}
+	else
+	{
+	for(var n = p1; n <10 ;n++)
+	    {
+		 document.writeln( "<h2>"+n+"</h2>" );
+		 document.writeln('<img src="https://www.cartoonmad.com/75577/6099/0'+s+'/00'+n+'.jpg">');
+	    }
+	
+	for(var n = 10; n <= p2;n++)
+	    {
+		document.writeln( "<h2>"+n+"</h2>" );
+		document.writeln('<img src="https://www.cartoonmad.com/75577/6099/0'+s+'/0'+n+'.jpg">');
+	    }
+	}
 	</script>
 	
 	
